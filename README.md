@@ -1,3 +1,8 @@
-Created By: Abiral Tuladhar 2025
+Personal website and portfolio for Abiral Tuladhar
 
-This is my public personal website where I showcase all of my projects.
+This site serves as a hub for my projects, experience, and contact information.
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
