@@ -311,19 +311,35 @@ body {
 }
 
 @media (max-width: 720px) {
-  html, body {
-    overflow-x: hidden;
+  .header-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
   }
 
-  .site-main {
-    padding-top: 120px;
+  .brand {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
   }
 
   .hero {
     position: relative;
     display: grid;
     place-items: center;
-    gap: 0;
     padding: 0 16px 24px;
   }
 
@@ -348,18 +364,27 @@ body {
     text-align: center;
     z-index: 2;
 
-    padding: 12px 12px;
-    border-radius: 12px;
-    background: rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(6px);
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
   }
 
-  .hero-text h1 {
-    margin: 0 0 6px;
-    line-height: 1.05;
-  }
-
+  .hero-text h1,
   .hero-text p {
-    margin: 0;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.65);
+  }
+
+  .hero::before,
+  .hero::after,
+  .hero-image::before,
+  .hero-image::after,
+  .hero-text::before,
+  .hero-text::after {
+    content: none !important;
+    display: none !important;
   }
 }
+
