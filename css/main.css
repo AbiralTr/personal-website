@@ -96,7 +96,6 @@ body {
 .hero-image {
   display: flex;
   justify-content: center;
-  transform: translateX(90px);
 }
 
 .hero-image img {
