@@ -402,14 +402,16 @@ body {
     content: none !important;
     display: none !important;
   }
-}
 
-@media (max-width: 720px) {
   .hero {
-    justify-items: center;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
   }
 
   .hero-image {
+    grid-column: 1 / -1;
     justify-self: center;
   }
 }
+
+
