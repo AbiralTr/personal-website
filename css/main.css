@@ -405,4 +405,12 @@ body {
   }
 }
 
+@media (max-width: 720px) {
+  .hero {
+    justify-items: center;
+  }
 
+  .hero-image {
+    justify-self: center;
+  }
+}
